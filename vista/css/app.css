@@ -1,0 +1,13 @@
+
+.panel{
+   max-width: 800px; 
+   margin: auto;
+   background:gainsboro ;
+}
+
+.text-center{
+    color:rgb(11, 210, 11) ;
+}
+table, tr,td{
+border: 1px solid tan;
+}
