@@ -11,3 +11,8 @@
 table, tr,td{
 border: 1px solid tan;
 }
+.btn{ background: rgb(68, 74, 61); color:antiquewhite; padding:10px 20px ;
+display: inline-block; text-decoration:none ;
+}
+
+

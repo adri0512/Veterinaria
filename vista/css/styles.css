@@ -1,0 +1,323 @@
+/* el * Selecciona todos los elementos dentro de la pagina*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+    }
+    body{
+        font-family: 'Oswald', sans-serif;
+        font-size: 15px; /*tamaño de la letra dentro del cabecero*/
+        background-color: #000000;
+        color: rgb(189, 69, 69); /*color de mi letra*/
+        
+    }
+    
+    /* para las etiquetas que con tienen el <a>*/
+    a {
+        color: #c41919;
+        text-decoration:none ; /*para que nuestro texto no salga subrayado*/
+    }
+    ul{
+     list-style: none;
+    }
+    
+    .container { /*dentro del container*/
+    width: 100% ;
+    margin: auto;
+    
+    }
+    
+    /* estilos de navegacion*/
+    /*para la etiquita nav-main de html*/
+    .nav-main {
+        font-size: 17px;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        height: auto;
+        padding: 15px 0;
+    }
+    /* para la navegacion izquierda, para que los acomode bien la parte donde dice inicio, ubicacion,etc..*/
+    .nav-main ul {
+        display: flex;
+    } 
+    /*para separar y que no esten juntos lo que contiene la navegacion*/
+    .nav-main ul li{
+        padding: 10px;
+    }
+    .nav-main ul li a{ /*para klas etiquetas a */
+        padding: 2px;
+    }
+    .nav-main ul li a:hover{ /**/
+        border-bottom:2px solid #fff ;
+    }
+    /*recordando la clase ul contiene una clase que se llama "nav-menu*/
+    .nav-main ul.nav-menu{
+        flex: 1;
+        margin-left: 20px;
+    }
+    hr{ /*´para esa linea*/
+        margin: 10px 0;
+       }
+    /*
+     .menu-btn{
+         cursor: pointer;
+         position: absolute;
+         top: 15px;
+         right: 30px;
+        z-index: 2;
+        display: none;
+     }
+    */
+     
+    .showcase{ /*Encabezado*/
+            width: 100%;
+            height: 550px;
+            background-image: url("");
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: flex-end;
+            padding-bottom: 50px;
+            margin-bottom: 20px;
+    
+            color: rgb(204, 19, 19);
+          }
+          
+    
+    /*PARA ALTERAR EL BOTON DENTRO DEL ENCABEZADO*/
+    /*clase btn, se encuentra en el header*/
+    .btn{
+        cursor: pointer;
+        display: inline-block;
+        border: 0;
+        font-weight: bold;
+        padding:10px 20px;
+        background: #201f1f;
+        color: #ffffff;/*color del texto que este dentro del boton*/
+        font-size: 19px;
+        /*border: 1px solid #ffffff; color del borde*/
+    
+    
+    }
+    /*efecto del boton MAS*/
+    .btn:hover{
+        opacity: .9;
+    }
+    
+    
+     /*PARTE DE LAS TARJETITAS*/
+    .wrap{
+        width: 1100px;
+        margin: 50px auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    
+    .tarjeta-wrap{
+        margin: 10px;
+        -webkit-perspective: 800;
+        perspective: 800;
+    }
+    
+    .tarjeta{
+        width: 300px;
+        height: 350px;
+        background: #585551;
+        position: relative;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-transition: .7s ease;
+        transition: .7s ease;
+        -webkit-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+        box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+    
+    }
+    
+    .adelante, .atras{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    
+    .adelante{
+        width: 100%;
+    }
+    
+    .atras{
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+    
+        padding: 15px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        font-size: medium;
+        text-align: center;
+        color: #fff;
+        font-family: "open sans";
+      background: #5f584e; 
+    }
+    
+    .tarjeta-wrap:hover .tarjeta{
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+    }
+    
+    .card1{
+        background-image: url("");
+        background-size: cover;
+    }
+    .card2{
+        background-image: url("");
+        background-size: cover;
+    }
+    .card3{
+        background-image: url("");
+        background-size: cover;
+    }
+    .card4{
+        background-image: url("");
+        background-size: cover;
+    }
+    
+    .card5{
+        background-image: url("");
+        background-size: cover;
+    }
+    .card6{
+        background-image: url("");
+        background-size: cover;
+    }
+    .card7{
+        background-image: url("");
+        background-size:contain;
+    }
+    .card8{
+     background-image: url("");
+     background-size: cover;
+    }
+    /*FINAL DE LAS TARJETAS*/
+    
+    
+    
+    /*PARA EL BANNER UNO */
+    .cards-banner-one{
+        width: 100%;
+        height: 350px;
+        background-image: url("");
+        margin-bottom: 40px;
+    } 
+      
+    .cards-banner-one .content{
+        width: 40%;
+        padding: 90px 0 0 30px;
+        color: #fff;
+    }
+    .cards-banner-one p,
+    .cards-banner-two h2{
+        margin: 10px 0 20px 0;
+    }
+    
+    /*TARJETA DEL BANNER DOS*/
+    .cards-banner-two {
+        width: 100%;
+        height: 350px;
+        background-image: url("");
+        background-size:contain;
+        color: burlywood;
+      }
+      
+      .cards-banner-two .content {
+        width: 50%;
+        padding: 90px 0 0 30px;
+    
+      }
+    
+    /*Pra las redes sociales*/
+      .social {
+        margin: 50px;
+      }
+      .social p {
+        text-align: center; /*para que se centre el texto*/
+        font-size: 30px;
+        margin-bottom: 20px; /*titulo de los iconos*/
+      }
+      .links { /*para centrar estos iconoc*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .links a {  /*tamaño de los icons*/
+        margin: 0 30px;
+      }
+      
+      .links a i {
+        font-size: 3rem;
+      }
+      
+      /* Links */
+      .footer-links {
+        background: #000000; /*primera parte del pie de pagina (footer)*/
+        color: #616161;
+        font-size: 12px;
+        padding: 35px 0;
+      }
+      
+      .footer-container { /*este nos ayudara a centrar nuetros links*/
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /*con 4 columnas*/
+        gap: 10px;
+        align-items: flex-start;
+        justify-content: center;
+      }
+      
+      .footer-container ul {
+        margin: 0 auto;
+      }
+      
+      .footer-links li {
+        line-height: 2.8;
+      }
+      
+      .footer {
+        background: #000000; /*segunda parte del pie de pagina (footer)*/
+        color: #8d0505;
+        font-size: 12px;
+        padding: 20px 0;
+        text-align: center;
+        font-size: 1rem;
+        padding-bottom: 20px;
+      }
+    #mapa{
+        justify-content: center;
+    }
+
+      @media (max-width: 700px){
+          .wrap{
+              grid-template-columns: repeat(2, 1fr);
+          }
+      }
+    

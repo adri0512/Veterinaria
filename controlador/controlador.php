@@ -20,8 +20,8 @@ class modeloController{
     	$nombre 	=	$_REQUEST['nombre'];
     	$apellidos 	=	$_REQUEST['apellidos'];
         $data       =   "'".$nombre."','".$apellidos."'";
-    	$producto 	=	new Modelo();
-		$dato 		=	$producto->insertar("cliente",$data);
+    	$cliente 	=	new Modelo();
+		$dato 		=	$cliente->insertar("cliente",$data);
 		header("location:".urlsite);
     }
 
@@ -54,6 +54,14 @@ class modeloController{
 		$dato 		=	$cliente->eliminar("cliente",$condicion);
 		header("location:".urlsite);
 	}
+
+	static function servicio(){
+		require_once("vista/nuevo.php");
+    }
+	static function login(){
+		require_once("vista/login/login.php");
+    }
+	
 }
 
 ?>
